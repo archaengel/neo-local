@@ -13,7 +13,12 @@ func Services() ([]Service, error) {
 	}
 
 	return []Service{
-		NewFaucet(), NewNeoScanSync(), NewPostgres(), neoPython, NewPrivateNet(), notificationsServer,
+    neoPython,
+		NewFaucet(),
+    NewNeoScanSync(),
+		NewPostgres(),
+		NewPrivateNet(),
+		notificationsServer,
 	}, nil
 }
 
