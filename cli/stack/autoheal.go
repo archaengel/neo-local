@@ -24,7 +24,7 @@ func NewAutoheal() Service {
 				MaximumRetryCount: 3,
 			},
 		},
-		//DependsOn: to be set after PR merged
+		// TODO: Add "DependsOn"
 		Image: "willfarrell/autoheal",
 		Name:  "autoheal",
 		Tag:   "10.5",
