@@ -20,7 +20,7 @@ func NewAutoheal() Service {
 				"/var/run/docker.sock:/var/run/docker.sock",
 			},
 			RestartPolicy: container.RestartPolicy{
-				Name:              "allways",
+				Name:              "always",
 				MaximumRetryCount: 3,
 			},
 		},
