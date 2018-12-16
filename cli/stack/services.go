@@ -15,7 +15,7 @@ func Services() ([]Service, error) {
 	return []Service{
 		neoPython,
 		NewFaucet(),
-		NewNeoScanSync(),
+		NewNeoScanAPI(),
 		NewPostgres(),
 		NewPrivateNet(),
 		notificationsServer,
